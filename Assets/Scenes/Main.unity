@@ -242,6 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e015690abcdee6941a1424b8c7072da6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SecondsToShowText: 5
+  Enemy: {fileID: 4546887563314934, guid: 6cfb1649f6d2f9e4ca3b5859aa18d55c, type: 2}
 --- !u!135 &1190172201
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -377,6 +379,10 @@ Prefab:
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}

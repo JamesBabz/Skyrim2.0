@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SamuraiScript : MonoBehaviour
 {
     public float SecondsToShowText = 5;
+    public Transform Enemy;
 
     private float _currentTime = 0.0f, _executedTime = 0.0f;
     private GameObject _player;
@@ -53,9 +54,13 @@ public class SamuraiScript : MonoBehaviour
 	        }
 	        else
 	        {
-	            _text.text = "Samurai: Please save our village! A Skeleton is rampaging!";
+	            _text.text = "Samurai: Please save our village! A Zombie is rampaging!";
 	            _hasQuestBeenGiven = true;
-            }
+	            Vector3 spawnPoint = gameObject.transform.position;
+	            spawnPoint.x = spawnPoint.x - 20;
+	            GameObject.Instantiate(Enemy, spawnPoint, Quaternion.identity);
+	        }
 	    }
 	}
+    
 }

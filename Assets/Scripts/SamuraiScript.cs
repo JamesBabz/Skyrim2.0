@@ -10,7 +10,6 @@ public class SamuraiScript : MonoBehaviour
     public Transform Enemy;
 
     private float _currentTime = 0.0f, _executedTime = 0.0f;
-    private GameObject _player;
     private bool _playerInRange;
     private Text _text;
     private bool _hasQuestBeenGiven;
